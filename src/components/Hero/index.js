@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from 'nuka-carousel'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 class Hero extends Component {
   render() {
