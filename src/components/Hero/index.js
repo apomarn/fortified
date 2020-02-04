@@ -1,40 +1,8 @@
 import React, { Component } from 'react'
 import Carousel from 'nuka-carousel'
 import Media from 'react-media'
-import { breakpoints, textStyles, colors } from '../../styles'
-import styled from 'styled-components'
-
-const MainContainer = styled.div`
-  position: relative;
-`
-const TitleContainer = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @media screen and (min-width: ${breakpoints.desktop}px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-`
-const Title = styled.p`
-  ${textStyles.h1Montserrat};
-  font-weight: 700;
-  color: ${colors.white};
-  @media screen and (min-width: ${breakpoints.desktop}px) {
-    ${textStyles.h1Montserrat};
-    font-weight: 700;
-    color: ${colors.white};
-  }
-`
-const SubHeader = styled.p`
-  ${textStyles.h2DancingScript}
-  color: ${colors.white};
-  font-weight: 700;
-  text-align: center;
-`
+import { MainContainer, TitleContainer, Title, SubHeader } from './style'
+import { breakpoints } from '../../styles'
 
 class Hero extends Component {
   render() {
