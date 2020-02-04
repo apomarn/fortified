@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { colors, textStyles } from '../../../styles'
+import { StyledDivider } from '../../Anchors'
 
 const MainContainer = styled.div`
   height: 100%;
@@ -14,13 +15,13 @@ const MainContainer = styled.div`
   z-index: 200;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
 `
 
 const Links = styled(Link)`
 ${textStyles.h3Montserrat}
   color: ${colors.brown};
- margin-left: 30px;
+ margin: 40px 0 40px 60px;
  text-decoration: none;
  :active {
    color: ${colors.lightBrown};
@@ -32,9 +33,13 @@ class SideDrawer extends Component {
     return (
       <MainContainer>
         <Links to='/'>About</Links>
+        <StyledDivider />
         <Links>Blogs</Links>
+        <StyledDivider />
         <Links>You Are Not Alone</Links>
+        <StyledDivider />
         <Links>Photo Gallery</Links>
+        <StyledDivider />
       </MainContainer>
     )
   }
