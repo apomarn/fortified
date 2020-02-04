@@ -3,7 +3,7 @@ import Carousel from 'nuka-carousel'
 import Media from 'react-media'
 import { MainContainer, TitleContainer, Title, SubHeader } from './style'
 import { breakpoints } from '../../styles'
-import Logo from '../Logo'
+import Navbar from '../Navbar'
 
 class Hero extends Component {
   render() {
@@ -39,7 +39,7 @@ class Hero extends Component {
                     alt='hero4'
                   />
                 </Carousel>
-                <Logo />
+                <Navbar />
                 <TitleContainer>
                   <Title>FORTIFIED</Title>
                   <SubHeader>Isaiah 40:31</SubHeader>
@@ -73,7 +73,7 @@ class Hero extends Component {
                     alt='hero4'
                   />
                 </Carousel>
-                <Logo />
+                <Navbar />
                 <TitleContainer>
                   <Title>FORTIFIED</Title>
                   <SubHeader>Isaiah 40:31</SubHeader>
