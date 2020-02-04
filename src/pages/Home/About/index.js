@@ -80,7 +80,7 @@ class About extends Component {
             somewhere you feel understood and loved. I can’t wait for you all to get to know a little more of what God
             has done throughout all these years and even more what he will do in your days to come! God bless you.
             <br></br>
-            <br></br>Your New Sis,<br></br>Ana Pomar
+            <br></br>Your New Sis.
           </Paragraph>
         </ParagraphContainer>
         <StyledDivider />
