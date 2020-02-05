@@ -74,7 +74,7 @@ export const colors = {
   lightBrown: '#BC7E4F',
   black: '#000000',
   white: '#ffffff',
-  tan: '#F3BF98'
+  tan: '#FFDCC2'
 }
 
 export const breakpoints = {
