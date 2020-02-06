@@ -6,7 +6,7 @@ import { StyledDivider } from '../../Anchors'
 
 const MainContainer = styled.div`
   height: 100%;
-  background: ${colors.white};
+  background-color: ${colors.black};
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -34,7 +34,7 @@ class SideDrawer extends Component {
       <MainContainer>
         <Links to='/'>About</Links>
         <StyledDivider />
-        <Links>Blogs</Links>
+        <Links to='/allblogs'>Blogs</Links>
         <StyledDivider />
         <Links>You Are Not Alone</Links>
         <StyledDivider />

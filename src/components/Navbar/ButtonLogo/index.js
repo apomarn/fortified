@@ -15,7 +15,7 @@ class ButtonLogo extends Component {
     return (
       <button onClick={this.props.drawerClick}>
         <PageLogo
-          src='https://res.cloudinary.com/apomarn/image/upload/v1580783848/fortified/finallogo_sjaky9.png'
+          src='https://res.cloudinary.com/apomarn/image/upload/v1580940087/fortified/finalfinallogo_zfqkp9.png'
           alt='logo'
         />
       </button>

@@ -30,7 +30,7 @@ const Title = styled.p`
 
 const Paragraph = styled.p`
   ${textStyles.h4Montserrat}
-  color: ${colors.black};
+  color: ${colors.white};
   text-align: justify;
   text-justify: inter-word;
   padding-left: 45px;

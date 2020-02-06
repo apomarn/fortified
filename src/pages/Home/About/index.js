@@ -36,7 +36,7 @@ const ParagraphContainer = styled.div`
 `
 const Paragraph = styled.p`
   ${textStyles.h4Montserrat}
-  color: ${colors.black};
+  color: ${colors.white};
   text-indent: 30px;
   text-align: justify;
   text-justify: inter-word;
@@ -51,19 +51,19 @@ class About extends Component {
         />
         <Name>Ana Pomar</Name>
         <ContactContainer>
-          <a href=''>
+          <a href='https://www.facebook.com/ana.pomar.1694'>
             <ImageContact
               src='https://res.cloudinary.com/apomarn/image/upload/v1580846305/fortified/facebook_qqbkyf.png'
               alt='facebook'
             />
           </a>
-          <a href=''>
+          <a href='https://www.instagram.com/_anapomar/?hl=en'>
             <ImageContact
               src='https://res.cloudinary.com/apomarn/image/upload/v1580846310/fortified/instagram_i3vlzx.png'
               alt='instagram'
             />
           </a>
-          <a href=''>
+          <a href='mailto:a_pomar13@hotmail.com'>
             <ImageContact
               src='https://res.cloudinary.com/apomarn/image/upload/v1580846311/fortified/email_k6w6qh.png'
               alt='email'
@@ -79,8 +79,6 @@ class About extends Component {
             my life personally as well as in the lives of some extraordinary women I’ve met along the way. Let this be
             somewhere you feel understood and loved. I can’t wait for you all to get to know a little more of what God
             has done throughout all these years and even more what he will do in your days to come! God bless you.
-            <br></br>
-            <br></br>Your New Sis.
           </Paragraph>
         </ParagraphContainer>
         <StyledDivider />

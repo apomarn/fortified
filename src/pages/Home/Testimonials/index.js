@@ -36,7 +36,7 @@ const Name = styled.p`
 
 const Paragraph = styled.p`
   ${textStyles.h4Montserrat}
-  color: ${colors.black}
+  color: ${colors.white};
   text-align: justify;
   text-justify: inter-word;
   margin-right: 22px;

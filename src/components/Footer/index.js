@@ -3,18 +3,13 @@ import styled from 'styled-components'
 import { textStyles, colors, breakpoints } from '../../styles'
 
 const MainContainer = styled.div`
-  background-color: ${colors.tan};
+  background-color: ${colors.black};
 `
-const Header = styled.p`
-  color: ${colors.lightBrown};
-  font-size: 14px;
-  padding-top: 18px;
-  text-align: center;
-  font-weight: bold;
-`
+
 const ContactContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  padding-top: 25px;
   margin-bottom: 25px;
   width: 100%;
 `
@@ -34,21 +29,20 @@ class Footer extends Component {
   render() {
     return (
       <MainContainer>
-        <Header>Lets Be Friends</Header>
         <ContactContainer>
-          <a href=''>
+          <a href='https://www.facebook.com/ana.pomar.1694'>
             <ImageContact
               src='https://res.cloudinary.com/apomarn/image/upload/v1580846305/fortified/facebook_qqbkyf.png'
               alt='facebook'
             />
           </a>
-          <a href=''>
+          <a href='https://www.instagram.com/_anapomar/?hl=en'>
             <ImageContact
               src='https://res.cloudinary.com/apomarn/image/upload/v1580846310/fortified/instagram_i3vlzx.png'
               alt='instagram'
             />
           </a>
-          <a href=''>
+          <a href='mailto:a_pomar13@hotmail.com'>
             <ImageContact
               src='https://res.cloudinary.com/apomarn/image/upload/v1580846311/fortified/email_k6w6qh.png'
               alt='email'
