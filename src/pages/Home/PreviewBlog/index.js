@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { StyledDivider } from '../../../components/Anchors'
 import { colors, textStyles, breakpoints } from '../../../styles'
@@ -31,13 +32,10 @@ const Title = styled.p`
 const Paragraph = styled.p`
   ${textStyles.h4Montserrat}
   color: ${colors.white};
-  text-align: justify;
-  text-justify: inter-word;
   padding-left: 45px;
   padding-right: 45px;
-  height: 60px;
 `
-const AllBlogs = styled.p`
+const AllBlogs = styled(Link)`
   font-size: 16px;
   color: ${colors.brown};
   font-weight: 900;
@@ -48,24 +46,48 @@ const AllBlogs = styled.p`
 `
 
 class PreviewBlog extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      allBlogs: []
+    }
+  }
+
   render() {
     return (
       <MainContainer>
         <Header>Recent Blogs...</Header>
+
         <BlogsContainer>
-          <div>
-            <Title>Titulo</Title>
-            <Paragraph>Parrafo kuy srgar uyg fawl iruf wleiufg fkre ufgw fweufg wef ukrwy fvawr </Paragraph>
-          </div>
-          <div>
-            <Title>Titulo</Title>
-            <Paragraph>Parrafo kuysrgaruygfawlirufgwleiufg fkreufgw fweufgwef ukrwyfvawr </Paragraph>
-          </div>
+          {this.state.allBlogs.map(blog => {
+            console.log(this.state.allBlogs)
+            return (
+              <Link to={`/allblogs/${blog.title}`}>
+                <Title>{blog.title}</Title>
+                <Paragraph>{blog.paragraph}</Paragraph>
+              </Link>
+            )
+          })}
         </BlogsContainer>
-        <AllBlogs>All Blogs</AllBlogs>
+        <AllBlogs to='/allblogs'>All Blogs</AllBlogs>
         <StyledDivider />
       </MainContainer>
     )
+  }
+
+  componentDidMount() {
+    var url
+    if (process.env.NODE_ENV === 'development') {
+      url = 'http://localhost:5000'
+    }
+
+    fetch(`${url}/allblogs`)
+      .then(data => data.json())
+      .then(blogs => {
+        this.setState({ allBlogs: blogs })
+      })
+      .catch(err => console.log(err))
   }
 }
 

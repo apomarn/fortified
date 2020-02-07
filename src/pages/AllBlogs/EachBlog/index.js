@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { textStyles, colors } from '../../../styles'
 
-const MainContainer = styled.div`
+const MainContainer = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,10 +23,7 @@ const Title = styled.p`
 const Paragraph = styled.p`
   ${textStyles.h4Montserrat}
   width: 300px;
-  height: 70px;
   color: ${colors.white};
-  text-align: justify;
-  text-justify: inter-word;
 `
 const ReadMore = styled.p`
   font-size: 14px;
@@ -37,21 +35,10 @@ const ReadMore = styled.p`
 class EachBlog extends Component {
   render() {
     return (
-      <MainContainer>
-        <Image
-          src='https://res.cloudinary.com/apomarn/image/upload/v1580845805/fortified/profile_frmczx.png'
-          akt='blog-pic'
-        />
-        <Title>title</Title>
-        <Paragraph>
-          paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here
-          paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here
-          paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here
-          paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here
-          paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here
-          paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here paragraph here
-          paragraph here paragraph here paragraph here
-        </Paragraph>
+      <MainContainer to={`/allblogs/${this.props.title}`}>
+        <Image src={this.props.image} alt='blog-pic' />
+        <Title>{this.props.title}</Title>
+        <Paragraph>{this.props.paragraph}</Paragraph>
         <ReadMore>Read More...</ReadMore>
       </MainContainer>
     )
