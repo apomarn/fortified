@@ -63,7 +63,7 @@ class PreviewBlog extends Component {
           {this.state.allBlogs.map(blog => {
             console.log(this.state.allBlogs)
             return (
-              <Link to={`/allblogs/${blog.title}`}>
+              <Link to={`/allblogs/${blog.title}`} key={blog._id}>
                 <Title>{blog.title}</Title>
                 <Paragraph>{blog.paragraph}</Paragraph>
               </Link>

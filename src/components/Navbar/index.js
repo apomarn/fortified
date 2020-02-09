@@ -9,8 +9,9 @@ import Backdrop from './Backdrop'
 import ButtonLogo from './ButtonLogo'
 
 export const MainContainer = styled.div`
-  position: absolute;
   width: 100%;
+  position: absolute;
+
   top: 0px;
   left: 0px;
   padding-left: 20px;

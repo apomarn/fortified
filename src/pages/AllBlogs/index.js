@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Navbar from '../../components/Navbar'
 import EachBlog from './EachBlog'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import { colors } from '../../styles'
+import Footer from '../../components/Footer'
 
 const MainContainer = styled.div`
   background-color: ${colors.black};
@@ -25,12 +25,9 @@ class AllBlogs extends Component {
         {this.state.allBlogs.map(blog => {
           console.log(this.state.allBlogs)
 
-          return (
-            <Link to={`/allblogs/${blog.title}`}>
-              <EachBlog {...blog} key={blog._id} />
-            </Link>
-          )
+          return <EachBlog {...blog} key={blog._id} />
         })}
+        <Footer />
       </MainContainer>
     )
   }

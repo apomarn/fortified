@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { textStyles, colors } from '../../../styles'
 
-const MainContainer = styled(Link)`
+const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@ const Paragraph = styled.p`
   width: 300px;
   color: ${colors.white};
 `
-const ReadMore = styled.p`
+const ReadMore = styled(Link)`
   font-size: 14px;
   color: ${colors.lightBrown};
   text-decoration: underline;
@@ -35,11 +35,11 @@ const ReadMore = styled.p`
 class EachBlog extends Component {
   render() {
     return (
-      <MainContainer to={`/allblogs/${this.props.title}`}>
+      <MainContainer>
         <Image src={this.props.image} alt='blog-pic' />
         <Title>{this.props.title}</Title>
         <Paragraph>{this.props.paragraph}</Paragraph>
-        <ReadMore>Read More...</ReadMore>
+        <ReadMore to={`/allblogs/${this.props.title}`}>Read More...</ReadMore>
       </MainContainer>
     )
   }

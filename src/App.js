@@ -6,40 +6,15 @@ import AllBlogs from './pages/AllBlogs'
 import Blog from './pages/Blog'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      allBlogs: []
-    }
-
+  render() {
     return (
       <>
         <Route exact path='/' component={Home} key='/' />
         <Route exact path='/allblogs' component={AllBlogs} key='/allblogs' />
 
-        {this.state.allBlogs.map(blog => {
-          return (
-            <>
-              <Route exact path={`/allblogs/${blog.title}`} render={() => <Blog {...blog} />} key={blog._id} />
-            </>
-          )
-        })}
+        <Route exact path='/allblogs/:title' component={Blog} />
       </>
     )
-  }
-  componentDidMount() {
-    var url
-    if (process.env.NODE_ENV === 'development') {
-      url = 'http://localhost:5000'
-    }
-
-    fetch(`${url}/allblogs`)
-      .then(data => data.json())
-      .then(blogs => {
-        this.setState({ allBlogs: blogs })
-      })
-      .catch(err => console.log(err))
   }
 }
 
