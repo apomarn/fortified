@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { StyledDivider } from '../../../components/Anchors/index'
-import { textStyles, colors, breakpoints } from '../../../styles'
+import { textStyles, colors } from '../../../styles'
 
 const MainContainer = styled.div`
   display: flex;

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { StyledDivider } from '../../../components/Anchors'
-import { colors, textStyles, breakpoints } from '../../../styles'
+import { colors, textStyles } from '../../../styles'
 
 const MainContainer = styled.div`
   display: flex;

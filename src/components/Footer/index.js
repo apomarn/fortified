@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { textStyles, colors, breakpoints } from '../../styles'
+import { textStyles, colors } from '../../styles'
 
 const MainContainer = styled.div`
   background-color: ${colors.black};

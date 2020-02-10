@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { colors, textStyles, breakpoints } from '../../../styles'
+import { colors, textStyles } from '../../../styles'
 
 const MainContainer = styled.div`
   display: flex;
@@ -66,17 +66,18 @@ class Testimonials extends Component {
         <Header>You Are Not Alone</Header>
         <TestimonialsContainer>
           {this.state.allTestimonies.map(testimony => {
+            console.log(this.state.allTestimonies)
             return (
-              <div>
+              <>
                 <ProfilePic src={testimony.user_image} alt='profilepic' />
                 <div>
                   <Name>{testimony.user_name}</Name>
                   <Paragraph>{testimony.testimony}</Paragraph>
-                  <ReadMore to={`/alltiestimonies/${testimony.title}`} key={testimony._id}>
+                  <ReadMore to={`/alltestimonies/${testimony.user_name}`} key={testimony._id}>
                     Read More
                   </ReadMore>
                 </div>
-              </div>
+              </>
             )
           })}
         </TestimonialsContainer>
@@ -89,7 +90,7 @@ class Testimonials extends Component {
       url = 'http://localhost:5000'
     }
 
-    fetch(`${url}/alltestimonials`)
+    fetch(`${url}/alltestimonies`)
       .then(data => data.json())
       .then(testimonies => {
         this.setState({ allTestimonies: testimonies })
