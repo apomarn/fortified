@@ -54,26 +54,47 @@ const ReadMore = styled(Link)`
   margin-bottom: 85px;
 `
 class Testimonials extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      allTestimonies: []
+    }
+  }
   render() {
     return (
       <MainContainer>
         <Header>You Are Not Alone</Header>
         <TestimonialsContainer>
-          <ProfilePic
-            src='https://res.cloudinary.com/apomarn/image/upload/v1580845805/fortified/profile_frmczx.png'
-            alt='profilepic'
-          />
-          <div>
-            <Name>Ana Pomar</Name>
-            <Paragraph>
-              hola como estas hola como estas hola como estas hola como estas hola como estas hola como estas hola como
-              estastas hola como hgvhj
-            </Paragraph>
-            <ReadMore to=''>Read More</ReadMore>
-          </div>
+          {this.state.allTestimonies.map(testimony => {
+            return (
+              <div>
+                <ProfilePic src={testimony.user_image} alt='profilepic' />
+                <div>
+                  <Name>{testimony.user_name}</Name>
+                  <Paragraph>{testimony.testimony}</Paragraph>
+                  <ReadMore to={`/alltiestimonies/${testimony.title}`} key={testimony._id}>
+                    Read More
+                  </ReadMore>
+                </div>
+              </div>
+            )
+          })}
         </TestimonialsContainer>
       </MainContainer>
     )
+  }
+  componentDidMount() {
+    var url
+    if (process.env.NODE_ENV === 'development') {
+      url = 'http://localhost:5000'
+    }
+
+    fetch(`${url}/alltestimonials`)
+      .then(data => data.json())
+      .then(testimonies => {
+        this.setState({ allTestimonies: testimonies })
+      })
+      .catch(err => console.log(err))
   }
 }
 
