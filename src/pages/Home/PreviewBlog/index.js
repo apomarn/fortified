@@ -34,6 +34,10 @@ const Paragraph = styled.p`
   color: ${colors.white};
   padding-left: 45px;
   padding-right: 45px;
+  overflow:hidden; 
+  white-space:wrap; 
+  width:100%; 
+  height: 100px;
 `
 const AllBlogs = styled(Link)`
   font-size: 16px;

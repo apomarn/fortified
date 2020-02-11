@@ -42,10 +42,10 @@ ${textStyles.h4Montserrat}
 
 const Paragraph = styled.p`
 ${textStyles.h4Montserrat}
-  color: ${colors.white};
+color: ${colors.white};
  margin: 0 50px;
  text-align: justify;
- padding: 45px 0;
+padding: 45px 0;
 `
 
 class Blog extends Component {

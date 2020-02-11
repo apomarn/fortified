@@ -40,7 +40,6 @@ const Paragraph = styled.p`
   text-align: justify;
   text-justify: inter-word;
   margin-right: 22px;
-  text-overflow: ellipsis;
   overflow: hidden;
   max-height: 100px;
 `
