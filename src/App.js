@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/Home'
 import AllBlogs from './pages/AllBlogs'
 import Blog from './pages/Blog'
+import AllTestimonies from './pages/AllTestimonies/index'
 import Testimony from './pages/Testimony'
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <Route exact path='/' component={Home} key='/' />
         <Route exact path='/allblogs' component={AllBlogs} key='/allblogs' />
         <Route exact path='/allblogs/:title' component={Blog} />
+        <Route exact path='/alltestimonies' component={AllTestimonies} />
         <Route exact path='/alltestimonies/:name' component={Testimony} />
       </>
     )

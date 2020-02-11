@@ -36,7 +36,7 @@ class SideDrawer extends Component {
         <StyledDivider />
         <Links to='/allblogs'>Blogs</Links>
         <StyledDivider />
-        <Links>You Are Not Alone</Links>
+        <Links to='/alltestimonies'>You Are Not Alone</Links>
         <StyledDivider />
         <Links>Photo Gallery</Links>
         <StyledDivider />

@@ -2,6 +2,18 @@ import React, { Component } from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import EachTestimony from './EachTestimony'
+import styled from 'styled-components'
+import { textStyles, colors } from '../../styles'
+
+const MainContainer = styled.div`
+  background-color: ${colors.black};
+`
+const Header = styled.p`
+${textStyles.h2DancingScript}
+  color: ${colors.lightBrown};
+  text-align: center;
+  padding-top: 90px;
+`
 
 class AllTestimonies extends Component {
   constructor(props) {
@@ -13,15 +25,16 @@ class AllTestimonies extends Component {
   }
   render() {
     return (
-      <div>
+      <MainContainer>
         <Navbar />
+        <Header>You Are Not Alone</Header>
         {this.state.allTestimonies.map(testimony => {
           console.log(this.state.allTestimonies)
 
           return <EachTestimony {...testimony} key={testimony._id} />
         })}
         <Footer />
-      </div>
+      </MainContainer>
     )
   }
   componentDidMount() {
