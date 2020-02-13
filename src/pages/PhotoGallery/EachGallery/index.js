@@ -24,7 +24,7 @@ const Image = styled.img`
 class EachGallery extends Component {
   render() {
     return (
-      <MainContainer to={`/alltestimonies/${this.props.user_name}`}>
+      <MainContainer to={`/alltestimonies/photos/${this.props.user_name}`}>
         <Name>{this.props.user_name}</Name>
         <Image src={this.props.user_image} alt='user_image' />
         <StyledDivider />

@@ -8,6 +8,7 @@ import AllTestimonies from './pages/AllTestimonies/index'
 import Testimony from './pages/Testimony'
 import PhotoGallery from './pages/PhotoGallery'
 import styled from 'styled-components'
+import PersonalPhoto from './pages/PersonalPhoto'
 
 const MainContainer = styled.div`
   background-color: black;
@@ -23,6 +24,7 @@ class App extends Component {
         <Route exact path='/alltestimonies' component={AllTestimonies} />
         <Route exact path='/alltestimonies/:name' component={Testimony} />
         <Route exact path='/photogallery' component={PhotoGallery} />
+        <Route exact path='/alltestimonies/photos/:name' component={PersonalPhoto} />
       </MainContainer>
     )
   }
