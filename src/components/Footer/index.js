@@ -4,8 +4,8 @@ import { textStyles, colors } from '../../styles'
 
 const MainContainer = styled.div`
   background-color: ${colors.black};
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: 1;
   left: 0;
   right: 0;
 `
