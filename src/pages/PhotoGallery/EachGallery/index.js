@@ -13,7 +13,7 @@ const Name = styled.p`
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  padding: 30px 0 20px 0;
+  padding: 0px 0 20px 0;
 `
 
 const Image = styled.img`

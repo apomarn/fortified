@@ -9,6 +9,8 @@ import Testimony from './pages/Testimony'
 import PhotoGallery from './pages/PhotoGallery'
 import styled from 'styled-components'
 import PersonalPhoto from './pages/PersonalPhoto'
+import IncludeMore from './pages/IncludeMore'
+import IncludeBlog from './pages/IncludeMore/IncludeBlog'
 
 const MainContainer = styled.div`
   background-color: black;
@@ -25,6 +27,8 @@ class App extends Component {
         <Route exact path='/alltestimonies/:name' component={Testimony} />
         <Route exact path='/photogallery' component={PhotoGallery} />
         <Route exact path='/alltestimonies/photos/:name' component={PersonalPhoto} />
+        <Route exact path='/includemore' component={IncludeMore} />
+        <Route exact path='/includeblog' component={IncludeBlog} />
       </MainContainer>
     )
   }
