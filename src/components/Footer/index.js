@@ -4,6 +4,10 @@ import { textStyles, colors } from '../../styles'
 
 const MainContainer = styled.div`
   background-color: ${colors.black};
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `
 
 const ContactContainer = styled.div`

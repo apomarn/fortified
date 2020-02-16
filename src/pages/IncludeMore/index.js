@@ -5,6 +5,9 @@ import Footer from '../../components/Footer'
 import styled from 'styled-components'
 import { textStyles, colors } from '../../styles'
 
+const MainContainer = styled.div`
+  height: auto;
+`
 const IncludeContainer = styled.div`
   display: flex;
   padding: 45px 0;
@@ -25,7 +28,7 @@ const MyLink = styled(Link)`
 class IncludeMore extends Component {
   render() {
     return (
-      <div>
+      <MainContainer>
         <Hero />
         <IncludeContainer>
           <MyLink to='/includeblog'>
@@ -36,7 +39,7 @@ class IncludeMore extends Component {
           </MyLink>
         </IncludeContainer>
         <Footer />
-      </div>
+      </MainContainer>
     )
   }
 }

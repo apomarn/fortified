@@ -7,6 +7,7 @@ import Footer from '../../components/Footer'
 
 const MainContainer = styled.div`
   padding: 60px 45px;
+  height: 100vh;
 `
 const Name = styled.p`
   color: ${colors.lightBrown};
