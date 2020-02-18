@@ -43,7 +43,7 @@ ${textStyles.h4Montserrat}
 const Paragraph = styled.p`
 ${textStyles.h4Montserrat}
 color: ${colors.white};
- margin: 0 50px;
+ margin: 20px 50px;
  text-align: justify;
 padding: 45px 0;
 `
@@ -66,7 +66,16 @@ class Blog extends Component {
           <Title>{this.state.blog.title}</Title>
         </Wrapper>
         <Date>{this.state.blog.date}</Date>
-        <Paragraph>{this.state.blog.paragraph}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_1}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_2}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_3}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_4}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_5}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_6}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_7}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_8}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_9}</Paragraph>
+        <Paragraph>{this.state.blog.paragraph_10}</Paragraph>
         <Footer />
       </MainContainer>
     )
