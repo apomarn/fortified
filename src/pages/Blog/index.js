@@ -7,6 +7,7 @@ import { textStyles, colors } from '../../styles'
 const MainContainer = styled.div`
   background-color: ${colors.black};
   padding-top: 100px;
+  padding-bottom: 50px;
 `
 
 const Wrapper = styled.div`
@@ -45,7 +46,6 @@ ${textStyles.h4Montserrat}
 color: ${colors.white};
  margin: 20px 50px;
  text-align: justify;
-padding: 45px 0;
 `
 
 class Blog extends Component {

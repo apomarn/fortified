@@ -2,6 +2,53 @@ import React, { Component } from 'react'
 import Navbar from '../../../components/Navbar'
 import Footer from '../../../components/Footer'
 import axios from 'axios'
+import styled from 'styled-components'
+import { textStyles, colors } from '../../../styles'
+
+const Header = styled.p`
+${textStyles.h1DancingScript}
+color: ${colors.lightBrown};
+padding-top: 85px;
+text-align: center;
+`
+
+const MyForm = styled.form`
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+`
+
+const Inputs = styled.input`
+  border: 2px solid ${colors.lightBrown};
+  border-radius: 20px;
+  padding: 10px;
+`
+const Textareas = styled.textarea`
+  border: 2px solid ${colors.lightBrown};
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+`
+
+const Subtitles = styled.p`
+  font-size: 18px;
+  color: ${colors.lightBrown};
+  margin-top: 20px;
+  margin-bottom: 10px;
+`
+
+const SubmitButton = styled.button`
+  border: 3px solid ${colors.lightBrown};
+  border-radius: 20px;
+  background-color: ${colors.black};
+  color: ${colors.lightBrown};
+  font-weight: 700;
+  padding: 10px;
+  width: 200px;
+  margin: 40px auto;
+  text-transform: uppercase;
+`
 
 class IncludeBlog extends Component {
   constructor(props) {
@@ -110,35 +157,96 @@ class IncludeBlog extends Component {
     return (
       <div>
         <Navbar />
-        <form>
-          <p>Image that will represent the blog</p>
-          <input type='text' value={this.state.image} onChange={this.onImageChange} />
-          <p>What is title going to be?</p>
-          <input type='text' value={this.state.title} onChange={this.onTitleChange} />
-          <p>Start writting here:</p>
-          <input type='text' value={this.state.paragraph_1} onChange={this.onParagraphChange_1} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_2} onChange={this.onParagraphChange_2} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_3} onChange={this.onParagraphChange_3} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_4} onChange={this.onParagraphChange_4} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_5} onChange={this.onParagraphChange_5} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_6} onChange={this.onParagraphChange_6} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_7} onChange={this.onParagraphChange_7} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_8} onChange={this.onParagraphChange_8} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_9} onChange={this.onParagraphChange_9} />
-          <p>Next paragraph</p>
-          <input type='text' value={this.state.paragraph_10} onChange={this.onParagraphChange_10} />
-          <button type='submit' onClick={this.onBlogSubmit}>
+        <Header>New Blog!</Header>
+        <MyForm>
+          <Subtitles>Image that will represent the blog</Subtitles>
+          <Inputs type='text' value={this.state.image} onChange={this.onImageChange} />
+          <Subtitles>Title</Subtitles>
+          <Inputs type='text' value={this.state.title} onChange={this.onTitleChange} />
+          <Subtitles>Start writting here:</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_1}
+            onChange={this.onParagraphChange_1}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_2}
+            onChange={this.onParagraphChange_2}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='textarea'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_3}
+            onChange={this.onParagraphChange_3}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_4}
+            onChange={this.onParagraphChange_4}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_5}
+            onChange={this.onParagraphChange_5}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_6}
+            onChange={this.onParagraphChange_6}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_7}
+            onChange={this.onParagraphChange_7}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_8}
+            onChange={this.onParagraphChange_8}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_9}
+            onChange={this.onParagraphChange_9}
+          />
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
+            type='text'
+            rows='5'
+            cols='25'
+            value={this.state.paragraph_10}
+            onChange={this.onParagraphChange_10}
+          />
+          <SubmitButton type='submit' onClick={this.onBlogSubmit}>
             Submit
-          </button>
-        </form>
+          </SubmitButton>
+        </MyForm>
         <Footer />
       </div>
     )
