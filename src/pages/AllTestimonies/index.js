@@ -2,18 +2,7 @@ import React, { Component } from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import EachTestimony from './EachTestimony'
-import styled from 'styled-components'
-import { textStyles, colors } from '../../styles'
-
-const MainContainer = styled.div`
-  background-color: ${colors.black};
-`
-const Header = styled.p`
-${textStyles.h2DancingScript}
-  color: ${colors.lightBrown};
-  text-align: center;
-  padding-top: 90px;
-`
+import { MainContainer, Header } from './style'
 
 class AllTestimonies extends Component {
   constructor(props) {
