@@ -1,15 +1,6 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-import { breakpoints } from '../../../styles'
+import { PageLogo } from './style'
 
-export const PageLogo = styled.img`
-  width: 60px;
-  heigth: 60px;
-  @media screen and (min-width: ${breakpoints.desktop}px) {
-    width: 100px;
-    heigth: 100px;
-  }
-`
 class ButtonLogo extends Component {
   render() {
     return (
