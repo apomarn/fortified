@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
 import Navbar from '../../components/Navbar'
 import EachBlog from './EachBlog'
-import styled from 'styled-components'
-import { colors } from '../../styles'
 import Footer from '../../components/Footer'
-
-const MainContainer = styled.div`
-  background-color: ${colors.black};
-`
+import { MainContainer } from './style'
 
 class AllBlogs extends Component {
   constructor(props) {
