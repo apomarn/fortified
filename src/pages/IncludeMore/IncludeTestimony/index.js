@@ -1,6 +1,50 @@
 import React, { Component } from 'react'
 import Navbar from '../../../components/Navbar'
 import axios from 'axios'
+import styled from 'styled-components'
+import { textStyles, colors } from '../../../styles'
+
+const Header = styled.p`
+${textStyles.h1DancingScript}
+color: ${colors.lightBrown};
+padding-top: 85px;
+text-align: center;
+`
+const MyForm = styled.form`
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+`
+const Inputs = styled.input`
+  border: 2px solid ${colors.lightBrown};
+  border-radius: 20px;
+  padding: 10px;
+`
+const Textareas = styled.textarea`
+  border: 2px solid ${colors.lightBrown};
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+`
+const Subtitles = styled.p`
+  font-size: 18px;
+  color: ${colors.lightBrown};
+  margin-top: 20px;
+  margin-bottom: 10px;
+`
+const SubmitButton = styled.button`
+  border: 3px solid ${colors.lightBrown};
+  border-radius: 20px;
+  background-color: ${colors.black};
+  color: ${colors.lightBrown};
+  font-weight: 700;
+  padding: 10px;
+  width: 200px;
+  margin: 40px auto;
+  text-transform: uppercase;
+`
+
 class IncludeTestimony extends Component {
   constructor(props) {
     super(props)
@@ -169,126 +213,126 @@ class IncludeTestimony extends Component {
     return (
       <div>
         <Navbar />
-        <p>Header</p>
-        <form>
-          <p>Main Photo:</p>
-          <input type='text' value={this.state.user_image} onChange={this.onUserImageChange} />
-          <p>Name:</p>
-          <input type='text' value={this.state.user_name} onChange={this.onUserNameChange}></input>
-          <p>Testimony:</p>
-          <textarea
+        <Header>New Testimony!</Header>
+        <MyForm>
+          <Subtitles>Main Photo:</Subtitles>
+          <Inputs type='text' value={this.state.user_image} onChange={this.onUserImageChange} />
+          <Subtitles>Name:</Subtitles>
+          <Inputs type='text' value={this.state.user_name} onChange={this.onUserNameChange}></Inputs>
+          <Subtitles>Testimony:</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part1}
             onChange={this.onTestimonyPart1Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part2}
             onChange={this.onTestimonyPart2Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part3}
             onChange={this.onTestimonyPart3Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part4}
             onChange={this.onTestimonyPart4Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part5}
             onChange={this.onTestimonyPart5Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part6}
             onChange={this.onTestimonyPart6Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part7}
             onChange={this.onTestimonyPart7Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part8}
             onChange={this.onTestimonyPart8Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part9}
             onChange={this.onTestimonyPart9Change}
           />
-          <p>Next paragraph</p>
-          <textarea
+          <Subtitles>Next paragraph</Subtitles>
+          <Textareas
             type='text'
             rows='5'
             cols='25'
             value={this.state.testimony_part10}
             onChange={this.onTestimonyPart10Change}
           />
-          <p>Photo Gallery:</p>
-          <p>Photo 1:</p>
-          <input type='text' value={this.state.photo_gallery_1} onChange={this.onPhotoGalleryChange_1} />
-          <p>Photo 2:</p>
-          <input type='text' value={this.state.photo_gallery_2} onChange={this.onPhotoGalleryChange_2} />
+          <Subtitles>Photo Gallery:</Subtitles>
+          <Subtitles>Photo 1:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_1} onChange={this.onPhotoGalleryChange_1} />
+          <Subtitles>Photo 2:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_2} onChange={this.onPhotoGalleryChange_2} />
 
-          <p>Photo 3:</p>
-          <input type='text' value={this.state.photo_gallery_3} onChange={this.onPhotoGalleryChange_3} />
+          <Subtitles>Photo 3:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_3} onChange={this.onPhotoGalleryChange_3} />
 
-          <p>Photo 4:</p>
-          <input type='text' value={this.state.photo_gallery_4} onChange={this.onPhotoGalleryChange_4} />
+          <Subtitles>Photo 4:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_4} onChange={this.onPhotoGalleryChange_4} />
 
-          <p>Photo 5:</p>
-          <input type='text' value={this.state.photo_gallery_5} onChange={this.onPhotoGalleryChange_5} />
+          <Subtitles>Photo 5:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_5} onChange={this.onPhotoGalleryChange_5} />
 
-          <p>Photo 6:</p>
-          <input type='text' value={this.state.photo_gallery_6} onChange={this.onPhotoGalleryChange_6} />
+          <Subtitles>Photo 6:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_6} onChange={this.onPhotoGalleryChange_6} />
 
-          <p>Photo 7:</p>
-          <input type='text' value={this.state.photo_gallery_7} onChange={this.onPhotoGalleryChange_7} />
+          <Subtitles>Photo 7:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_7} onChange={this.onPhotoGalleryChange_7} />
 
-          <p>Photo 8:</p>
-          <input type='text' value={this.state.photo_gallery_8} onChange={this.onPhotoGalleryChange_8} />
+          <Subtitles>Photo 8:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_8} onChange={this.onPhotoGalleryChange_8} />
 
-          <p>Photo 9:</p>
-          <input type='text' value={this.state.photo_gallery_9} onChange={this.onPhotoGalleryChange_9} />
+          <Subtitles>Photo 9:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_9} onChange={this.onPhotoGalleryChange_9} />
 
-          <p>Photo 10:</p>
-          <input type='text' value={this.state.photo_gallery_10} onChange={this.onPhotoGalleryChange_10} />
+          <Subtitles>Photo 10:</Subtitles>
+          <Inputs type='text' value={this.state.photo_gallery_10} onChange={this.onPhotoGalleryChange_10} />
 
-          <button type='submit' onClick={this.onBlogSubmit}>
+          <SubmitButton type='submit' onClick={this.onBlogSubmit}>
             Submit
-          </button>
-        </form>
+          </SubmitButton>
+        </MyForm>
       </div>
     )
   }
