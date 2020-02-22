@@ -1,46 +1,15 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import {
+  MainContainer,
+  ProfilePhoto,
+  Name,
+  ContactContainer,
+  ImageContact,
+  Paragraph,
+  ParagraphContainer
+} from './style'
 import { StyledDivider } from '../../../components/Anchors/index'
-import { textStyles, colors } from '../../../styles'
 
-const MainContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-const ProfilePhoto = styled.img`
-  margin-top: 85px;
-  height: 300px;
-  width: 300px;
-`
-
-const Name = styled.p`
-  ${textStyles.h2DancingScript}
-  color: ${colors.lightBrown};
-  margin-top: 45px;
-  margin-bottom: 45px;
-`
-const ContactContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 45px;
-  width: 300px;
-`
-const ImageContact = styled.img`
-  width: 50px;
-  height: 50px;
-`
-const ParagraphContainer = styled.div`
-  width: 300px;
-  margin-bottom: 85px;
-`
-const Paragraph = styled.p`
-  ${textStyles.h4Montserrat}
-  color: ${colors.white};
-  text-indent: 30px;
-  text-align: justify;
-  text-justify: inter-word;
-`
 class About extends Component {
   render() {
     return (
