@@ -11,6 +11,7 @@ import styled from 'styled-components'
 import PersonalPhoto from './pages/PersonalPhoto'
 import IncludeMore from './pages/IncludeMore'
 import IncludeBlog from './pages/IncludeMore/IncludeBlog'
+import IncludeTestimony from './pages/IncludeMore/IncludeTestimony'
 
 const MainContainer = styled.div`
   background-color: black;
@@ -29,6 +30,7 @@ class App extends Component {
         <Route exact path='/alltestimonies/photos/:name' component={PersonalPhoto} />
         <Route exact path='/includemore' component={IncludeMore} />
         <Route exact path='/includeblog' component={IncludeBlog} />
+        <Route exact path='/includetestimoy' component={IncludeTestimony} />
       </MainContainer>
     )
   }
