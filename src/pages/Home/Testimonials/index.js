@@ -71,7 +71,7 @@ class Testimonials extends Component {
                 <ProfilePic src={testimony.user_image} alt='profilepic' />
                 <div>
                   <Name>{testimony.user_name}</Name>
-                  <Paragraph>{testimony.testimony}</Paragraph>
+                  <Paragraph>{testimony.testimony_part1}</Paragraph>
                   <ReadMore to={`/alltestimonies/${testimony.user_name}`} key={testimony._id}>
                     Read More
                   </ReadMore>

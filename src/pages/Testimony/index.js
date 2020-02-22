@@ -29,7 +29,7 @@ const Paragraph = styled.p`
   color: ${colors.white};
   text-align: justify;
   text-justify: inter-word;
-  margin: 0 50px 45px 50px;
+  margin: 15px 50px;
 `
 
 class Testimony extends Component {
@@ -45,7 +45,25 @@ class Testimony extends Component {
         <Navbar />
         <ProfilePic src={this.state.testimony.user_image} alt='testimoni-profile-pic' />
         <Name>{this.state.testimony.user_name}</Name>
-        <Paragraph>{this.state.testimony.testimony}</Paragraph>
+        <Paragraph>{this.state.testimony.testimony_part1}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part2}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part3}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part4}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part5}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part6}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part7}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part8}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part9}</Paragraph>
+
+        <Paragraph>{this.state.testimony.testimony_part10}</Paragraph>
         <Footer />
       </MainContainer>
     )
