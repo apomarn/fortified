@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { textStyles, colors } from '../../styles'
+import { colors } from '../../styles'
 import Carousel from 'nuka-carousel'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'

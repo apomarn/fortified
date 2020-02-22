@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Hero from '../../components/Hero'
 import Footer from '../../components/Footer'
 import styled from 'styled-components'
-import { textStyles, colors } from '../../styles'
+import { colors } from '../../styles'
 
 const MainContainer = styled.div`
   height: auto;
@@ -34,7 +34,7 @@ class IncludeMore extends Component {
           <MyLink to='/includeblog'>
             Include <br></br>New Blog!
           </MyLink>
-          <MyLink>
+          <MyLink to='/includetestimony'>
             Include <br></br> New Testimony!
           </MyLink>
         </IncludeContainer>
