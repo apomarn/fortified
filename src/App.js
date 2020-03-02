@@ -14,7 +14,7 @@ import IncludeBlog from './pages/IncludeMore/IncludeBlog'
 import IncludeTestimony from './pages/IncludeMore/IncludeTestimony'
 
 const MainContainer = styled.div`
-  background-color: black;
+  background-color: #475b42;
 `
 
 class App extends Component {

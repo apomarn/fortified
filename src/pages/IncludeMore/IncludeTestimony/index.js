@@ -135,34 +135,34 @@ class IncludeTestimony extends Component {
     this.setState({ testimony_part10: e.target.value })
   }
   onPhotoGalleryChange_1(e) {
-    this.state({ photo_gallery_1: e.target.value })
+    this.setState({ photo_gallery_1: e.target.value })
   }
   onPhotoGalleryChange_2(e) {
-    this.state({ photo_gallery_2: e.target.value })
+    this.setState({ photo_gallery_2: e.target.value })
   }
   onPhotoGalleryChange_3(e) {
-    this.state({ photo_gallery_3: e.target.value })
+    this.setState({ photo_gallery_3: e.target.value })
   }
   onPhotoGalleryChange_4(e) {
-    this.state({ photo_gallery_4: e.target.value })
+    this.setState({ photo_gallery_4: e.target.value })
   }
   onPhotoGalleryChange_5(e) {
-    this.state({ photo_gallery_5: e.target.value })
+    this.setState({ photo_gallery_5: e.target.value })
   }
   onPhotoGalleryChange_6(e) {
-    this.state({ photo_gallery_6: e.target.value })
+    this.setState({ photo_gallery_6: e.target.value })
   }
   onPhotoGalleryChange_7(e) {
-    this.state({ photo_gallery_7: e.target.value })
+    this.setState({ photo_gallery_7: e.target.value })
   }
   onPhotoGalleryChange_8(e) {
-    this.state({ photo_gallery_8: e.target.value })
+    this.setState({ photo_gallery_8: e.target.value })
   }
   onPhotoGalleryChange_9(e) {
-    this.state({ photo_gallery_9: e.target.value })
+    this.setState({ photo_gallery_9: e.target.value })
   }
   onPhotoGalleryChange_10(e) {
-    this.state({ photo_gallery_10: e.target.value })
+    this.setState({ photo_gallery_10: e.target.value })
   }
 
   onBlogSubmit(e) {
@@ -179,7 +179,17 @@ class IncludeTestimony extends Component {
       testimony_part7: this.state.testimony_part7,
       testimony_part8: this.state.testimony_part8,
       testimony_part9: this.state.testimony_part9,
-      testimony_part10: this.state.testimony_part10
+      testimony_part10: this.state.testimony_part10,
+      photo_gallery_1: this.state.photo_gallery_1,
+      photo_gallery_2: this.state.photo_gallery_2,
+      photo_gallery_3: this.state.photo_gallery_3,
+      photo_gallery_4: this.state.photo_gallery_4,
+      photo_gallery_5: this.state.photo_gallery_5,
+      photo_gallery_6: this.state.photo_gallery_6,
+      photo_gallery_7: this.state.photo_gallery_7,
+      photo_gallery_8: this.state.photo_gallery_8,
+      photo_gallery_9: this.state.photo_gallery_9,
+      photo_gallery_10: this.state.photo_gallery_10
     }
 
     axios.post('http://localhost:5000/alltestimonies', newTestimony).then(res => console.log(res.data))

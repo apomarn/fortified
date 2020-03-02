@@ -2,9 +2,7 @@ import styled from 'styled-components'
 import { textStyles, colors } from '../../styles'
 
 export const MainContainer = styled.div`
-  background-color: ${colors.black};
-  position: absolute;
-  bottom: 1;
+  background-color: #5e5c40;
   left: 0;
   right: 0;
 `

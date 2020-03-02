@@ -36,19 +36,16 @@ class PersonalPhoto extends Component {
         <Name>{this.state.testimony.user_name}</Name>
         <CarouselContainer>
           <Carousel withoutControls autoplay={true} width='300px' height='300px'>
-            <img src='https://res.cloudinary.com/apomarn/image/upload/v1580715339/fortified/hero.png' alt='hero1' />
-            <img
-              src='https://res.cloudinary.com/apomarn/image/upload/v1578420177/abnb/Imageapt1_qzynuw.png'
-              alt='hero2'
-            />
-            <img
-              src='https://res.cloudinary.com/apomarn/image/upload/v1559144034/WeDo/guest-list-container.jpg'
-              alt='hero3'
-            />
-            <img
-              src='https://res.cloudinary.com/apomarn/image/upload/v1559144034/WeDo/share-container.jpg'
-              alt='hero4'
-            />
+            <img src={this.state.testimony.photo_gallery_1} alt='photo1' />
+            <img src={this.state.testimony.photo_gallery_2} alt='photo2' />
+            <img src={this.state.testimony.photo_gallery_3} alt='photo3' />
+            <img src={this.state.testimony.photo_gallery_4} alt='photo4' />
+            <img src={this.state.testimony.photo_gallery_5} alt='photo5' />
+            <img src={this.state.testimony.photo_gallery_6} alt='photo6' />
+            <img src={this.state.testimony.photo_gallery_7} alt='photo7' />
+            <img src={this.state.testimony.photo_gallery_8} alt='photo8' />
+            <img src={this.state.testimony.photo_gallery_9} alt='photo9' />
+            <img src={this.state.testimony.photo_gallery_10} alt='photo10' />
           </Carousel>
         </CarouselContainer>
         <Footer />

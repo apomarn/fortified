@@ -8,19 +8,19 @@ class Footer extends Component {
         <ContactContainer>
           <a href='https://www.facebook.com/ana.pomar.1694'>
             <ImageContact
-              src='https://res.cloudinary.com/apomarn/image/upload/v1580846305/fortified/facebook_qqbkyf.png'
+              src='https://res.cloudinary.com/apomarn/image/upload/v1583032689/fortified/facebook_i8h4zg.png'
               alt='facebook'
             />
           </a>
           <a href='https://www.instagram.com/_anapomar/?hl=en'>
             <ImageContact
-              src='https://res.cloudinary.com/apomarn/image/upload/v1580846310/fortified/instagram_i3vlzx.png'
+              src='https://res.cloudinary.com/apomarn/image/upload/v1583032683/fortified/instagram_cneiym.png'
               alt='instagram'
             />
           </a>
           <a href='mailto:a_pomar13@hotmail.com'>
             <ImageContact
-              src='https://res.cloudinary.com/apomarn/image/upload/v1580846311/fortified/email_k6w6qh.png'
+              src='https://res.cloudinary.com/apomarn/image/upload/v1583032686/fortified/email_wctsbf.png'
               alt='email'
             />
           </a>

@@ -2,53 +2,7 @@ import React, { Component } from 'react'
 import Navbar from '../../../components/Navbar'
 import Footer from '../../../components/Footer'
 import axios from 'axios'
-import styled from 'styled-components'
-import { textStyles, colors } from '../../../styles'
-
-const Header = styled.p`
-${textStyles.h1DancingScript}
-color: ${colors.lightBrown};
-padding-top: 85px;
-text-align: center;
-`
-
-const MyForm = styled.form`
-  padding: 0px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-`
-
-const Inputs = styled.input`
-  border: 2px solid ${colors.lightBrown};
-  border-radius: 20px;
-  padding: 10px;
-`
-const Textareas = styled.textarea`
-  border: 2px solid ${colors.lightBrown};
-  border-radius: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-`
-
-const Subtitles = styled.p`
-  font-size: 18px;
-  color: ${colors.lightBrown};
-  margin-top: 20px;
-  margin-bottom: 10px;
-`
-
-const SubmitButton = styled.button`
-  border: 3px solid ${colors.lightBrown};
-  border-radius: 20px;
-  background-color: ${colors.black};
-  color: ${colors.lightBrown};
-  font-weight: 700;
-  padding: 10px;
-  width: 200px;
-  margin: 40px auto;
-  text-transform: uppercase;
-`
+import { Header, MyForm, Inputs, Textareas, Subtitles, SubmitButton } from './style'
 
 class IncludeBlog extends Component {
   constructor(props) {

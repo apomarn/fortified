@@ -23,7 +23,7 @@ class PreviewBlog extends Component {
             return (
               <Link to={`/allblogs/${blog.title}`} key={blog._id}>
                 <Title>{blog.title}</Title>
-                <Paragraph>{blog.paragraph}</Paragraph>
+                <Paragraph>{blog.paragraph_1}</Paragraph>
               </Link>
             )
           })}

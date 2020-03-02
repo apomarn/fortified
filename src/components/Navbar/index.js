@@ -39,7 +39,7 @@ class Navbar extends Component {
           ) : (
             <MainContainer>
               <PageLogo
-                src='https://res.cloudinary.com/apomarn/image/upload/v1580783848/fortified/finallogo_sjaky9.png'
+                src='https://res.cloudinary.com/apomarn/image/upload/v1583029398/fortified/logo.png'
                 alt='logo'
               />
               <Links to='/'>About</Links>

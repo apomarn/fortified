@@ -17,7 +17,8 @@ export const TitleContainer = styled.div`
   }
 `
 export const Title = styled.p`
-  ${textStyles.h1Montserrat};
+  font-family: IM Fell English SC;
+  font-size: 48px;
   font-weight: 700;
   color: ${colors.white};
   @media screen and (min-width: ${breakpoints.desktop}px) {

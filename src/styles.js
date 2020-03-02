@@ -70,8 +70,8 @@ export const textStyles = {
 }
 
 export const colors = {
-  brown: '#956140',
-  lightBrown: '#BC7E4F',
+  brown: '#FFDCC2',
+  lightBrown: '#FFDCC2',
   black: '#000000',
   white: '#ffffff',
   tan: '#FFDCC2'
