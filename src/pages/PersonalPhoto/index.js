@@ -1,26 +1,9 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-import { colors } from '../../styles'
 import Carousel from 'nuka-carousel'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { MainContainer, Name, CarouselContainer } from './style'
 
-const MainContainer = styled.div`
-  padding: 60px 45px;
-  height: 100vh;
-`
-const Name = styled.p`
-  color: ${colors.lightBrown};
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  padding: 40px 0;
-`
-
-const CarouselContainer = styled.div`
-  padding: 0 auto;
-  margin-botton: 10px;
-`
 class PersonalPhoto extends Component {
   constructor(props) {
     super(props)
