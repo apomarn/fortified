@@ -1,16 +1,8 @@
 import React, { Component } from 'react'
 import Navbar from '../../components/Navbar'
-import styled from 'styled-components'
-import { textStyles, colors } from '../../styles'
 import Footer from '../../components/Footer'
 import EachGallery from './EachGallery'
-
-const Header = styled.p`
-${textStyles.h2DancingScript}
-  color: ${colors.lightBrown};
-  text-align: center;
-  padding-top: 90px;
-`
+import { Header } from './style'
 
 class PhotoGallery extends Component {
   constructor(props) {
