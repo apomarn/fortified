@@ -30,7 +30,7 @@ class App extends Component {
         <Route exact path='/alltestimonies/photos/:name' component={PersonalPhoto} />
         <Route exact path='/includemore' component={IncludeMore} />
         <Route exact path='/includeblog' component={IncludeBlog} />
-        <Route exact path='/includetestimoy' component={IncludeTestimony} />
+        <Route exact path='/includetestimony' component={IncludeTestimony} />
       </MainContainer>
     )
   }
